@@ -7,7 +7,6 @@
 
     <title>Dasharath Kumar | Data Engineer Portfolio</title>
 
-    <!-- SEO -->
     <meta name="description"
         content="Dasharath Kumar - Data Engineer Portfolio showcasing scalable ETL pipelines, cloud systems, big data technologies, and distributed processing expertise." />
 
@@ -16,23 +15,18 @@
 
     <meta name="author" content="Dasharath Kumar" />
 
-    <!-- Open Graph -->
     <meta property="og:title" content="Dasharath Kumar | Data Engineer Portfolio">
     <meta property="og:description"
         content="Portfolio showcasing projects, skills, and experience in scalable data engineering systems.">
     <meta property="og:type" content="website">
 
-    <!-- Favicon -->
     <link rel="icon" type="image/png" href="image/favicon.png">
 
-    <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
 
-    <!-- Font Awesome -->
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
@@ -93,23 +87,40 @@
 
         .active-nav {
             background: rgba(255, 255, 255, 0.08);
-            color: white !important;
+            color: #00bfa5 !important;
+            border-left: 3px solid #00bfa5;
         }
 
         .card-hover:hover {
             transform: translateY(-6px);
             box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
         }
+
+        /* Skill Badges styling */
+        .skill {
+            background-color: #0f172a;
+            border: 1px solid #1e293b;
+            color: #94a3b8;
+            padding: 0.5rem 1rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .skill:hover {
+            border-color: #00bfa5;
+            color: white;
+            transform: translateY(-2px);
+        }
     </style>
 </head>
 
 <body class="text-slate-300 antialiased overflow-x-hidden">
 
-    <!-- Background Glow -->
     <div class="fixed top-0 left-0 w-96 h-96 bg-cyan-500/10 blur-3xl rounded-full pointer-events-none"></div>
     <div class="fixed bottom-0 right-0 w-96 h-96 bg-purple-500/10 blur-3xl rounded-full pointer-events-none"></div>
 
-    <!-- Mobile Header -->
     <header
         class="lg:hidden sticky top-0 z-50 bg-[#020617]/95 backdrop-blur border-b border-slate-800 px-6 py-4 flex items-center justify-between">
 
@@ -128,7 +139,7 @@
             </div>
         </div>
 
-        <button id="menuBtn" class="text-white text-xl">
+        <button id="menuBtn" class="text-white text-xl p-2">
             <i class="fa-solid fa-bars"></i>
         </button>
 
@@ -136,13 +147,11 @@
 
     <div class="flex">
 
-        <!-- SIDEBAR -->
         <aside id="sidebar"
             class="fixed lg:sticky top-0 left-[-100%] lg:left-0 z-50 w-72 h-screen bg-sidebarBg border-r border-slate-800 transition-all duration-300 flex flex-col justify-between">
 
             <div class="p-6">
 
-                <!-- Profile -->
                 <div class="flex items-center gap-4 mb-10">
 
                     <img src="image/image.png"
@@ -162,7 +171,6 @@
 
                 </div>
 
-                <!-- Nav -->
                 <nav class="space-y-2">
 
                     <a href="#home"
@@ -194,13 +202,13 @@
                         <i class="fa-solid fa-layer-group"></i>
                         <span>Skills</span>
                     </a>
+                    
                     <a href="#certifications"
                         class="nav-link flex items-center gap-3 px-4 py-3 rounded-xl text-slate-400 hover:bg-slate-800/50 hover:text-white transition">
-
                         <i class="fa-solid fa-award"></i>
                         <span>Certifications</span>
-
                     </a>
+                    
                     <a href="#contact"
                         class="nav-link flex items-center gap-3 px-4 py-3 rounded-xl text-slate-400 hover:bg-slate-800/50 hover:text-white transition">
                         <i class="fa-regular fa-envelope"></i>
@@ -211,7 +219,6 @@
 
             </div>
 
-            <!-- Bottom -->
             <div class="p-6 border-t border-slate-800">
 
                 <div class="flex justify-center gap-5 text-lg mb-6">
@@ -249,10 +256,8 @@
 
         </aside>
 
-        <!-- MAIN -->
         <main class="flex-1">
 
-            <!-- HERO -->
             <section id="home"
                 class="min-h-screen flex items-center justify-center px-6 lg:px-20 py-20 relative">
 
@@ -260,47 +265,34 @@
 
                     <div
                         class="inline-block px-4 py-2 bg-slate-900 border border-slate-800 rounded-full text-tealAccent text-sm mb-6">
-
                         Welcome to my portfolio
-
                     </div>
 
                     <h1
                         class="text-5xl md:text-7xl font-extrabold leading-tight text-white mb-8">
-
                         Building scalable <br>
-
                         <span
                             class="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-cyan-400 to-sky-500">
-
                             Data Engineering Solutions
-
                         </span>
-
                     </h1>
 
                     <p
                         class="max-w-2xl mx-auto text-slate-400 text-lg leading-relaxed mb-10">
-
                         Data Engineer with 4+ years of experience in designing ETL pipelines,
                         distributed systems, cloud-native architectures, and real-time streaming solutions.
-
                     </p>
 
                     <div class="flex flex-wrap justify-center gap-4">
 
                         <a href="#projects"
                             class="bg-gradient-to-r from-tealAccent to-cyan-500 hover:opacity-90 text-slate-900 font-bold px-8 py-4 rounded-xl transition hover:-translate-y-1">
-
                             View Projects
-
                         </a>
 
                         <a href="#contact"
                             class="border border-slate-700 hover:border-slate-500 hover:bg-slate-900/40 px-8 py-4 rounded-xl transition">
-
                             Contact Me
-
                         </a>
 
                     </div>
@@ -309,149 +301,93 @@
 
             </section>
 
-            <!-- STATS -->
             <section class="px-6 lg:px-20 pb-24">
 
                 <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
 
                     <div
                         class="bg-cardBg border border-slate-800 rounded-2xl p-8 text-center fade-up card-hover transition duration-300">
-
                         <h3 class="text-4xl font-bold text-white mb-2">4+</h3>
                         <p class="text-slate-400 text-sm">Years Experience</p>
-
                     </div>
 
                     <div
                         class="bg-cardBg border border-slate-800 rounded-2xl p-8 text-center fade-up card-hover transition duration-300">
-
                         <h3 class="text-4xl font-bold text-white mb-2">20+</h3>
                         <p class="text-slate-400 text-sm">Data Pipelines</p>
-
                     </div>
 
                     <div
                         class="bg-cardBg border border-slate-800 rounded-2xl p-8 text-center fade-up card-hover transition duration-300">
-
                         <h3 class="text-4xl font-bold text-white mb-2">10TB+</h3>
                         <p class="text-slate-400 text-sm">Data Processed</p>
-
                     </div>
 
                     <div
                         class="bg-cardBg border border-slate-800 rounded-2xl p-8 text-center fade-up card-hover transition duration-300">
-
                         <h3 class="text-4xl font-bold text-white mb-2">15+</h3>
                         <p class="text-slate-400 text-sm">Technologies</p>
-
                     </div>
 
                 </div>
 
             </section>
 
-            <!-- ABOUT -->
             <section id="about"
                 class="max-w-6xl mx-auto px-6 lg:px-20 py-24 border-t border-slate-900 fade-up">
 
                 <div class="text-center mb-16">
-
-                    <h2 class="text-4xl font-bold text-white mb-4">
-                        About Me
-                    </h2>
-
-                    <div
-                        class="w-20 h-1 bg-gradient-to-r from-tealAccent to-cyan-500 mx-auto rounded-full">
-                    </div>
-
+                    <h2 class="text-4xl font-bold text-white mb-4">About Me</h2>
+                    <div class="w-20 h-1 bg-gradient-to-r from-tealAccent to-cyan-500 mx-auto rounded-full"></div>
                 </div>
 
                 <div class="grid lg:grid-cols-2 gap-14 items-center">
 
                     <div class="space-y-6 text-slate-400 leading-relaxed">
-
                         <p>
                             Hello! I'm <span class="text-white font-medium">Dasharath Kumar</span>, a results-driven Data Engineer dedicated to architecting high-performance data pipelines, distributed systems, and enterprise-grade platforms.
                         </p>
-
                         <p>
                             My foundational technical journey began with a BCA from LNMCBM, followed by securing <span class="text-tealAccent font-semibold">AIR 42 in NIMCET 2018</span>, which earned me an MCA from <span class="text-white font-medium">NIT Trichy</span> (2018–2021).
                         </p>
-
                         <p>
                             I kicked off my career at Comviva, scaling complex ETL workflows and high-volume distributed systems, which led to my promotion to <span class="text-tealAccent font-semibold">Senior Data Engineer</span>. 
                         </p>
-
                         <p>
                             Currently, I am a Data Engineer at the <span class="text-white font-medium">National Australia Bank (NAB)</span>, responsible for delivering scalable data integration solutions, maximizing pipeline execution efficiency, and transforming complex enterprise data streams.
                         </p>
-
                     </div>
 
-                    <div
-                        class="bg-cardBg border border-slate-800 rounded-3xl p-8 space-y-6">
+                    <div class="bg-cardBg border border-slate-800 rounded-3xl p-8 space-y-6">
 
                         <div class="flex items-start gap-4">
-
-                            <div
-                                class="w-12 h-12 rounded-xl bg-tealAccent/10 flex items-center justify-center text-tealAccent">
+                            <div class="w-12 h-12 rounded-xl bg-tealAccent/10 flex items-center justify-center text-tealAccent">
                                 <i class="fa-solid fa-server"></i>
                             </div>
-
                             <div>
-
-                                <h3 class="text-white font-semibold mb-1">
-                                    Scalable Infrastructure
-                                </h3>
-
-                                <p class="text-slate-400 text-sm">
-                                    Building high-availability enterprise-grade systems.
-                                </p>
-
+                                <h3 class="text-white font-semibold mb-1">Scalable Infrastructure</h3>
+                                <p class="text-slate-400 text-sm">Building high-availability enterprise-grade systems.</p>
                             </div>
-
                         </div>
 
                         <div class="flex items-start gap-4">
-
-                            <div
-                                class="w-12 h-12 rounded-xl bg-cyan-500/10 flex items-center justify-center text-cyan-400">
+                            <div class="w-12 h-12 rounded-xl bg-cyan-500/10 flex items-center justify-center text-cyan-400">
                                 <i class="fa-solid fa-bolt"></i>
                             </div>
-
                             <div>
-
-                                <h3 class="text-white font-semibold mb-1">
-                                    Performance Optimization
-                                </h3>
-
-                                <p class="text-slate-400 text-sm">
-                                    Improving distributed processing and reducing execution latency.
-                                </p>
-
+                                <h3 class="text-white font-semibold mb-1">Performance Optimization</h3>
+                                <p class="text-slate-400 text-sm">Improving distributed processing and reducing execution latency.</p>
                             </div>
-
                         </div>
 
                         <div class="flex items-start gap-4">
-
-                            <div
-                                class="w-12 h-12 rounded-xl bg-purple-500/10 flex items-center justify-center text-purple-400">
+                            <div class="w-12 h-12 rounded-xl bg-purple-500/10 flex items-center justify-center text-purple-400">
                                 <i class="fa-solid fa-shield-halved"></i>
                             </div>
-
                             <div>
-
-                                <h3 class="text-white font-semibold mb-1">
-                                    Data Governance
-                                </h3>
-
-                                <p class="text-slate-400 text-sm">
-                                    Maintaining secure and reliable enterprise data ecosystems.
-                                </p>
-
+                                <h3 class="text-white font-semibold mb-1">Data Governance</h3>
+                                <p class="text-slate-400 text-sm">Maintaining secure and reliable enterprise data ecosystems.</p>
                             </div>
-
                         </div>
 
                     </div>
@@ -460,766 +396,390 @@
 
             </section>
 
-            <!-- EXPERIENCE -->
             <section id="experience"
                 class="max-w-5xl mx-auto px-6 lg:px-20 py-24 border-t border-slate-900 fade-up">
 
                 <div class="text-center mb-16">
-
-                    <h2 class="text-4xl font-bold text-white mb-4">
-                        Work Experience
-                    </h2>
-
-                    <div
-                        class="w-20 h-1 bg-gradient-to-r from-tealAccent to-cyan-500 mx-auto rounded-full">
-                    </div>
-
+                    <h2 class="text-4xl font-bold text-white mb-4">Work Experience</h2>
+                    <div class="w-20 h-1 bg-gradient-to-r from-tealAccent to-cyan-500 mx-auto rounded-full"></div>
                 </div>
 
                 <div class="space-y-10 relative border-l border-slate-800 pl-8">
 
                     <div class="relative">
-
-                        <div
-                            class="absolute -left-[41px] top-1 w-5 h-5 rounded-full bg-tealAccent border-4 border-mainBg">
-                        </div>
-
-                        <div
-                            class="bg-cardBg border border-slate-800 rounded-2xl p-6">
-
-                            <div
-                                class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-2 mb-3">
-
-                                <h3 class="text-xl font-bold text-white">
-                                    Senior Associate Data Engineer
-                                </h3>
-
-                                <span
-                                    class="text-sm bg-slate-900 border border-slate-800 px-3 py-1 rounded-full text-slate-400">
-                                    Sep 2024 - Present
-                                </span>
-
+                        <div class="absolute -left-[41px] top-1 w-5 h-5 rounded-full bg-tealAccent border-4 border-mainBg"></div>
+                        <div class="bg-cardBg border border-slate-800 rounded-2xl p-6">
+                            <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-2 mb-3">
+                                <h3 class="text-xl font-bold text-white">Senior Associate Data Engineer</h3>
+                                <span class="text-sm bg-slate-900 border border-slate-800 px-3 py-1 rounded-full text-slate-400">Sep 2024 - Present</span>
                             </div>
-
-                            <p class="text-tealAccent mb-4 font-medium">
-                                National Australia Bank (NAB) • Full-time
-                            </p>
-
-                            <p class="text-slate-400 leading-relaxed">
-                                Engineering highly efficient data processing products, optimizing end-to-end analytical pipeline architectures, and scaling distributed workflows to unlock high-throughput business data streams.
-                            </p>
-
+                            <p class="text-tealAccent mb-4 font-medium">National Australia Bank (NAB) • Full-time</p>
+                            <p class="text-slate-400 leading-relaxed">Engineering highly efficient data processing products, optimizing end-to-end analytical pipeline architectures, and scaling distributed workflows to unlock high-throughput business data streams.</p>
                         </div>
-
                     </div>
 
                     <div class="relative">
-
-                        <div
-                            class="absolute -left-[41px] top-1 w-5 h-5 rounded-full bg-cyan-500 border-4 border-mainBg">
-                        </div>
-
-                        <div
-                            class="bg-cardBg border border-slate-800 rounded-2xl p-6">
-
-                            <div
-                                class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-2 mb-3">
-
-                                <h3 class="text-xl font-bold text-white">
-                                    Senior Data Engineer
-                                </h3>
-
-                                <span
-                                    class="text-sm bg-slate-900 border border-slate-800 px-3 py-1 rounded-full text-slate-400">
-                                    Oct 2022 - Sep 2024
-                                </span>
-
+                        <div class="absolute -left-[41px] top-1 w-5 h-5 rounded-full bg-cyan-500 border-4 border-mainBg"></div>
+                        <div class="bg-cardBg border border-slate-800 rounded-2xl p-6">
+                            <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-2 mb-3">
+                                <h3 class="text-xl font-bold text-white">Senior Data Engineer</h3>
+                                <span class="text-sm bg-slate-900 border border-slate-800 px-3 py-1 rounded-full text-slate-400">Oct 2022 - Sep 2024</span>
                             </div>
-
-                            <p class="text-tealAccent mb-4 font-medium">
-                                Comviva • Full-time
-                            </p>
-
-                            <p class="text-slate-400 leading-relaxed">
-                                Led code-level optimization of Spark execution processing, restructured legacy ETL architectures into streamlined micro-batch frameworks, and orchestrated production jobs processing massive enterprise volumes.
-                            </p>
-
+                            <p class="text-tealAccent mb-4 font-medium">Comviva • Full-time</p>
+                            <p class="text-slate-400 leading-relaxed">Led code-level optimization of Spark execution processing, restructured legacy ETL architectures into streamlined micro-batch frameworks, and orchestrated production jobs processing massive enterprise volumes.</p>
                         </div>
-
                     </div>
 
                     <div class="relative">
-
-                        <div
-                            class="absolute -left-[41px] top-1 w-5 h-5 rounded-full bg-slate-700 border-4 border-mainBg">
-                        </div>
-
-                        <div
-                            class="bg-cardBg border border-slate-800 rounded-2xl p-6">
-
-                            <div
-                                class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-2 mb-3">
-
-                                <h3 class="text-xl font-bold text-white">
-                                    Data Engineer
-                                </h3>
-
-                                <span
-                                    class="text-sm bg-slate-900 border border-slate-800 px-3 py-1 rounded-full text-slate-400">
-                                    Jul 2021 - Sep 2022
-                                </span>
-
+                        <div class="absolute -left-[41px] top-1 w-5 h-5 rounded-full bg-slate-700 border-4 border-mainBg"></div>
+                        <div class="bg-cardBg border border-slate-800 rounded-2xl p-6">
+                            <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-2 mb-3">
+                                <h3 class="text-xl font-bold text-white">Data Engineer</h3>
+                                <span class="text-sm bg-slate-900 border border-slate-800 px-3 py-1 rounded-full text-slate-400">Jul 2021 - Sep 2022</span>
                             </div>
-
-                            <p class="text-tealAccent mb-4 font-medium">
-                                Comviva • Full-time
-                            </p>
-
-                            <p class="text-slate-400 leading-relaxed">
-                                Built production-grade ETL pipelines using Airflow and PySpark, optimized partition indexing mechanics over extensive data warehouses, and implemented data validation engines to verify upstream telemetry accuracy.
-                            </p>
-
+                            <p class="text-tealAccent mb-4 font-medium">Comviva • Full-time</p>
+                            <p class="text-slate-400 leading-relaxed">Built production-grade ETL pipelines using Airflow and PySpark, optimized partition indexing mechanics over extensive data warehouses, and implemented data validation engines to verify upstream telemetry accuracy.</p>
                         </div>
-
                     </div>
 
                     <div class="relative">
-
-                        <div
-                            class="absolute -left-[41px] top-1 w-5 h-5 rounded-full bg-slate-850 border-4 border-mainBg">
-                        </div>
-
-                        <div
-                            class="bg-cardBg border border-slate-800 rounded-2xl p-6 opacity-85">
-
-                            <div
-                                class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-2 mb-3">
-
-                                <h3 class="text-xl font-bold text-slate-300">
-                                    Product Development Engineer Intern
-                                </h3>
-
-                                <span
-                                    class="text-sm bg-slate-900 border border-slate-800 px-3 py-1 rounded-full text-slate-500">
-                                    Jan 2021 - Jul 2021
-                                </span>
-
+                        <div class="absolute -left-[41px] top-1 w-5 h-5 rounded-full bg-slate-850 border-4 border-mainBg"></div>
+                        <div class="bg-cardBg border border-slate-800 rounded-2xl p-6 opacity-85">
+                            <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-2 mb-3">
+                                <h3 class="text-xl font-bold text-slate-300">Product Development Engineer Intern</h3>
+                                <span class="text-sm bg-slate-900 border border-slate-800 px-3 py-1 rounded-full text-slate-500">Jan 2021 - Jul 2021</span>
                             </div>
-
-                            <p class="text-slate-500 mb-4 font-medium">
-                                Comviva • Internship
-                            </p>
-
-                            <p class="text-slate-500 text-sm leading-relaxed">
-                                Developed foundational backend code structures, assisted in designing data workflows for enterprise products, and diagnosed execution errors across staging environment systems.
-                            </p>
-
+                            <p class="text-slate-500 mb-4 font-medium">Comviva • Internship</p>
+                            <p class="text-slate-500 text-sm leading-relaxed">Developed foundational backend code structures, assisted in designing data workflows for enterprise products, and diagnosed execution errors across staging environment systems.</p>
                         </div>
-
                     </div>
 
                 </div>
 
             </section>
 
-            <!-- PROJECTS -->
             <section id="projects"
                 class="max-w-6xl mx-auto px-6 lg:px-20 py-24 border-t border-slate-900 fade-up">
 
                 <div class="text-center mb-16">
-
-                    <h2 class="text-4xl font-bold text-white mb-4">
-                        Featured Projects
-                    </h2>
-
-                    <div
-                        class="w-20 h-1 bg-gradient-to-r from-tealAccent to-cyan-500 mx-auto rounded-full">
-                    </div>
-
+                    <h2 class="text-4xl font-bold text-white mb-4">Featured Projects</h2>
+                    <div class="w-20 h-1 bg-gradient-to-r from-tealAccent to-cyan-500 mx-auto rounded-full"></div>
                 </div>
 
                 <div class="grid md:grid-cols-2 gap-8">
 
-                    <div
-                        class="bg-cardBg border border-slate-800 rounded-3xl p-8 card-hover transition duration-300">
-
+                    <div class="bg-cardBg border border-slate-800 rounded-3xl p-8 card-hover transition duration-300">
                         <div class="flex items-center justify-between mb-6">
-
                             <i class="fa-regular fa-folder-open text-4xl text-tealAccent"></i>
-
                             <div class="flex gap-4 text-lg">
-
-                                <a href="#"
-                                    class="hover:text-white transition">
-                                    <i class="fa-brands fa-github"></i>
-                                </a>
-
-                                <a href="#"
-                                    class="hover:text-white transition">
-                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                                </a>
-
+                                <a href="#" class="hover:text-white transition"><i class="fa-brands fa-github"></i></a>
+                                <a href="#" class="hover:text-white transition"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                             </div>
-
                         </div>
-
-                        <h3 class="text-2xl font-bold text-white mb-4">
-                            Real-Time Analytics Pipeline
-                        </h3>
-
-                        <p class="text-slate-400 leading-relaxed mb-6">
-                            Designed Kafka + Spark streaming architecture processing
-                            millions of daily events with automated schema validation and scalable ETL workflows.
-                        </p>
-
+                        <h3 class="text-2xl font-bold text-white mb-4">Real-Time Analytics Pipeline</h3>
+                        <p class="text-slate-400 leading-relaxed mb-6">Designed Kafka + Spark streaming architecture processing millions of daily events with automated schema validation and scalable ETL workflows.</p>
                         <div class="flex flex-wrap gap-2">
-
-                            <span
-                                class="px-3 py-1 rounded-full bg-slate-900 border border-slate-700 text-xs">
-                                Apache Spark
-                            </span>
-
-                            <span
-                                class="px-3 py-1 rounded-full bg-slate-900 border border-slate-700 text-xs">
-                                Kafka
-                            </span>
-
-                            <span
-                                class="px-3 py-1 rounded-full bg-slate-900 border border-slate-700 text-xs">
-                                AWS
-                            </span>
-
-                            <span
-                                class="px-3 py-1 rounded-full bg-slate-900 border border-slate-700 text-xs">
-                                Python
-                            </span>
-
+                            <span class="px-3 py-1 rounded-full bg-slate-900 border border-slate-700 text-xs">Apache Spark</span>
+                            <span class="px-3 py-1 rounded-full bg-slate-900 border border-slate-700 text-xs">Kafka</span>
+                            <span class="px-3 py-1 rounded-full bg-slate-900 border border-slate-700 text-xs">AWS</span>
+                            <span class="px-3 py-1 rounded-full bg-slate-900 border border-slate-700 text-xs">Python</span>
                         </div>
-
                     </div>
 
-                    <div
-                        class="bg-cardBg border border-slate-800 rounded-3xl p-8 card-hover transition duration-300">
-
+                    <div class="bg-cardBg border border-slate-800 rounded-3xl p-8 card-hover transition duration-300">
                         <div class="flex items-center justify-between mb-6">
-
                             <i class="fa-regular fa-folder-open text-4xl text-cyan-400"></i>
-
                             <div class="flex gap-4 text-lg">
-
-                                <a href="#"
-                                    class="hover:text-white transition">
-                                    <i class="fa-brands fa-github"></i>
-                                </a>
-
-                                <a href="#"
-                                    class="hover:text-white transition">
-                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                                </a>
-
+                                <a href="#" class="hover:text-white transition"><i class="fa-brands fa-github"></i></a>
+                                <a href="#" class="hover:text-white transition"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                             </div>
-
                         </div>
-
-                        <h3 class="text-2xl font-bold text-white mb-4">
-                            Cloud Warehouse Optimization
-                        </h3>
-
-                        <p class="text-slate-400 leading-relaxed mb-6">
-                            Optimized Snowflake warehouse performance,
-                            reduced query latency,
-                            and redesigned multi-stage analytical transformation pipelines.
-                        </p>
-
+                        <h3 class="text-2xl font-bold text-white mb-4">Cloud Warehouse Optimization</h3>
+                        <p class="text-slate-400 leading-relaxed mb-6">Optimized Snowflake warehouse performance, reduced query latency, and redesigned multi-stage analytical transformation pipelines.</p>
                         <div class="flex flex-wrap gap-2">
-
-                            <span
-                                class="px-3 py-1 rounded-full bg-slate-900 border border-slate-700 text-xs">
-                                Snowflake
-                            </span>
-
-                            <span
-                                class="px-3 py-1 rounded-full bg-slate-900 border border-slate-700 text-xs">
-                                SQL
-                            </span>
-
-                            <span
-                                class="px-3 py-1 rounded-full bg-slate-900 border border-slate-700 text-xs">
-                                Airflow
-                            </span>
-
-                            <span
-                                class="px-3 py-1 rounded-full bg-slate-900 border border-slate-700 text-xs">
-                                dbt
-                            </span>
-
+                            <span class="px-3 py-1 rounded-full bg-slate-900 border border-slate-700 text-xs">Snowflake</span>
+                            <span class="px-3 py-1 rounded-full bg-slate-900 border border-slate-700 text-xs">SQL</span>
+                            <span class="px-3 py-1 rounded-full bg-slate-900 border border-slate-700 text-xs">Airflow</span>
+                            <span class="px-3 py-1 rounded-full bg-slate-900 border border-slate-700 text-xs">dbt</span>
                         </div>
-
                     </div>
 
                 </div>
 
             </section>
 
-            <!-- SKILLS -->
             <section id="skills"
                 class="max-w-6xl mx-auto px-6 lg:px-20 py-24 border-t border-slate-900 fade-up">
 
                 <div class="text-center mb-16">
-
-                    <h2 class="text-4xl font-bold text-white mb-4">
-                        Skills & Technologies
-                    </h2>
-
-                    <div
-                        class="w-20 h-1 bg-gradient-to-r from-tealAccent to-cyan-500 mx-auto rounded-full">
-                    </div>
-
+                    <h2 class="text-4xl font-bold text-white mb-4">Skills & Technologies</h2>
+                    <div class="w-20 h-1 bg-gradient-to-r from-tealAccent to-cyan-500 mx-auto rounded-full"></div>
                 </div>
 
                 <div class="grid md:grid-cols-2 gap-8">
 
-                    <div
-                        class="bg-cardBg border border-slate-800 rounded-3xl p-8 space-y-5">
-
-                        <h3 class="text-xl font-bold text-white">
-                            Languages & Frameworks
-                        </h3>
-
+                    <div class="bg-cardBg border border-slate-800 rounded-3xl p-8 space-y-5">
+                        <h3 class="text-xl font-bold text-white">Languages & Frameworks</h3>
                         <div class="flex flex-wrap gap-3">
-
                             <span class="skill">Python</span>
                             <span class="skill">SQL</span>
                             <span class="skill">PySpark</span>
                             <span class="skill">Spark Core</span>
-
                         </div>
-
                     </div>
 
-                    <div
-                        class="bg-cardBg border border-slate-800 rounded-3xl p-8 space-y-5">
-
-                        <h3 class="text-xl font-bold text-white">
-                            Data Infrastructure
-                        </h3>
-
+                    <div class="bg-cardBg border border-slate-800 rounded-3xl p-8 space-y-5">
+                        <h3 class="text-xl font-bold text-white">Data Infrastructure</h3>
                         <div class="flex flex-wrap gap-3">
-
                             <span class="skill">Apache Kafka</span>
                             <span class="skill">Apache Airflow</span>
                             <span class="skill">Docker</span>
                             <span class="skill">Hive</span>
-
                         </div>
-
                     </div>
 
-                    <div
-                        class="bg-cardBg border border-slate-800 rounded-3xl p-8 space-y-5">
-
-                        <h3 class="text-xl font-bold text-white">
-                            Cloud Platforms
-                        </h3>
-
+                    <div class="bg-cardBg border border-slate-800 rounded-3xl p-8 space-y-5">
+                        <h3 class="text-xl font-bold text-white">Cloud Platforms</h3>
                         <div class="flex flex-wrap gap-3">
-
                             <span class="skill">AWS</span>
                             <span class="skill">Snowflake</span>
                             <span class="skill">BigQuery</span>
-
                         </div>
-
                     </div>
 
-                    <div
-                        class="bg-cardBg border border-slate-800 rounded-3xl p-8 space-y-5">
-
-                        <h3 class="text-xl font-bold text-white">
-                            Tools & Practices
-                        </h3>
-
+                    <div class="bg-cardBg border border-slate-800 rounded-3xl p-8 space-y-5">
+                        <h3 class="text-xl font-bold text-white">Tools & Practices</h3>
                         <div class="flex flex-wrap gap-3">
-
                             <span class="skill">dbt</span>
                             <span class="skill">GitHub</span>
                             <span class="skill">CI/CD</span>
                             <span class="skill">Linux</span>
-
                         </div>
-
                     </div>
 
                 </div>
 
             </section>
 
-<!-- CERTIFICATIONS -->
-<section id="certifications"
-    class="max-w-6xl mx-auto px-6 lg:px-20 py-24 border-t border-slate-900 fade-up">
+            <section id="certifications"
+                class="max-w-6xl mx-auto px-6 lg:px-20 py-24 border-t border-slate-900 fade-up">
 
-    <div class="text-center mb-16">
-
-        <h2 class="text-4xl font-bold text-white mb-4">
-            Certifications
-        </h2>
-
-        <div
-            class="w-20 h-1 bg-gradient-to-r from-tealAccent to-cyan-500 mx-auto rounded-full">
-        </div>
-
-    </div>
-
-    <div class="grid md:grid-cols-2 gap-8">
-
-        <!-- Certification 1 -->
-        <div
-            class="bg-cardBg border border-slate-800 rounded-3xl p-8 card-hover transition duration-300">
-
-            <div class="flex items-start gap-5">
-
-                <div
-                    class="w-14 h-14 rounded-2xl bg-tealAccent/10 text-tealAccent flex items-center justify-center text-2xl shrink-0">
-
-                    <i class="fa-solid fa-award"></i>
-
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-white mb-4">Certifications</h2>
+                    <div class="w-20 h-1 bg-gradient-to-r from-tealAccent to-cyan-500 mx-auto rounded-full"></div>
                 </div>
 
-                <div class="space-y-3">
+                <div class="grid md:grid-cols-2 gap-8">
 
-                    <div>
-
-                        <h3 class="text-xl font-bold text-white">
-                            Databricks Lakehouse Fundamentals
-                        </h3>
-
-                        <p class="text-tealAccent text-sm mt-1">
-                            Databricks
-                        </p>
-
+                    <div class="bg-cardBg border border-slate-800 rounded-3xl p-8 card-hover transition duration-300">
+                        <div class="flex items-start gap-5">
+                            <div class="w-14 h-14 rounded-2xl bg-tealAccent/10 text-tealAccent flex items-center justify-center text-2xl shrink-0">
+                                <i class="fa-solid fa-award"></i>
+                            </div>
+                            <div class="space-y-3">
+                                <div>
+                                    <h3 class="text-xl font-bold text-white">Databricks Lakehouse Fundamentals</h3>
+                                    <p class="text-tealAccent text-sm mt-1">Databricks</p>
+                                </div>
+                                <p class="text-slate-400 leading-relaxed text-sm">
+                                    Successfully completed certification focused on Lakehouse architecture, Delta Lake, distributed analytics, and scalable data engineering workflows.
+                                </p>
+                                <div class="flex flex-wrap gap-2 pt-2">
+                                    <span class="px-3 py-1 rounded-full bg-slate-900 border border-slate-700 text-xs">Databricks</span>
+                                    <span class="px-3 py-1 rounded-full bg-slate-900 border border-slate-700 text-xs">Lakehouse</span>
+                                    <span class="px-3 py-1 rounded-full bg-slate-900 border border-slate-700 text-xs">Delta Lake</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
-                    <p class="text-slate-400 leading-relaxed text-sm">
-
-                        Successfully completed certification focused on Lakehouse
-                        architecture, Delta Lake, distributed analytics,
-                        and scalable data engineering workflows.
-
-                    </p>
-
-                    <div class="flex flex-wrap gap-2 pt-2">
-
-                        <span
-                            class="px-3 py-1 rounded-full bg-slate-900 border border-slate-700 text-xs">
-                            Databricks
-                        </span>
-
-                        <span
-                            class="px-3 py-1 rounded-full bg-slate-900 border border-slate-700 text-xs">
-                            Lakehouse
-                        </span>
-
-                        <span
-                            class="px-3 py-1 rounded-full bg-slate-900 border border-slate-700 text-xs">
-                            Delta Lake
-                        </span>
-
+                    <div class="bg-cardBg border border-slate-800 rounded-3xl p-8 card-hover transition duration-300">
+                        <div class="flex items-start gap-5">
+                            <div class="w-14 h-14 rounded-2xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-2xl shrink-0">
+                                <i class="fa-solid fa-certificate"></i>
+                            </div>
+                            <div class="space-y-3">
+                                <div>
+                                    <h3 class="text-xl font-bold text-white">Big Data & Distributed Systems</h3>
+                                    <p class="text-cyan-400 text-sm mt-1">Professional Learning</p>
+                                </div>
+                                <p class="text-slate-400 leading-relaxed text-sm">
+                                    Advanced learning focused on distributed computing, scalable data processing, Hadoop ecosystem, Spark optimization, and enterprise ETL architecture patterns.
+                                </p>
+                                <div class="flex flex-wrap gap-2 pt-2">
+                                    <span class="px-3 py-1 rounded-full bg-slate-900 border border-slate-700 text-xs">Hadoop</span>
+                                    <span class="px-3 py-1 rounded-full bg-slate-900 border border-slate-700 text-xs">Spark</span>
+                                    <span class="px-3 py-1 rounded-full bg-slate-900 border border-slate-700 text-xs">ETL</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
 
-            </div>
-
-        </div>
-
-        <!-- Certification 2 -->
-        <div
-            class="bg-cardBg border border-slate-800 rounded-3xl p-8 card-hover transition duration-300">
-
-            <div class="flex items-start gap-5">
-
-                <div
-                    class="w-14 h-14 rounded-2xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-2xl shrink-0">
-
-                    <i class="fa-solid fa-certificate"></i>
-
-                </div>
-
-                <div class="space-y-3">
-
-                    <div>
-
-                        <h3 class="text-xl font-bold text-white">
-                            Big Data & Distributed Systems
-                        </h3>
-
-                        <p class="text-cyan-400 text-sm mt-1">
-                            Professional Learning
-                        </p>
-
-                    </div>
-
-                    <p class="text-slate-400 leading-relaxed text-sm">
-
-                        Advanced learning focused on distributed computing,
-                        scalable data processing,
-                        Hadoop ecosystem, Spark optimization,
-                        and enterprise ETL architecture patterns.
-
-                    </p>
-
-                    <div class="flex flex-wrap gap-2 pt-2">
-
-                        <span
-                            class="px-3 py-1 rounded-full bg-slate-900 border border-slate-700 text-xs">
-                            Hadoop
-                        </span>
-
-                        <span
-                            class="px-3 py-1 rounded-full bg-slate-900 border border-slate-700 text-xs">
-                            Spark
-                        </span>
-
-                        <span
-                            class="px-3 py-1 rounded-full bg-slate-900 border border-slate-700 text-xs">
-                            ETL
-                        </span>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-          
-            <!-- CONTACT -->
+            </section>
+                      
             <section id="contact"
                 class="max-w-6xl mx-auto px-6 lg:px-20 py-24 border-t border-slate-900 fade-up">
 
                 <div class="text-center mb-16">
-
-                    <h2 class="text-4xl font-bold text-white mb-4">
-                        Get In Touch
-                    </h2>
-
-                    <div
-                        class="w-20 h-1 bg-gradient-to-r from-tealAccent to-cyan-500 mx-auto rounded-full">
-                    </div>
-
+                    <h2 class="text-4xl font-bold text-white mb-4">Get In Touch</h2>
+                    <div class="w-20 h-1 bg-gradient-to-r from-tealAccent to-cyan-500 mx-auto rounded-full"></div>
                 </div>
 
                 <div class="grid lg:grid-cols-2 gap-10">
 
-                    <!-- Contact Info -->
-                    <div
-                        class="bg-cardBg border border-slate-800 rounded-3xl p-8 space-y-8">
-
+                    <div class="bg-cardBg border border-slate-800 rounded-3xl p-8 space-y-8">
                         <div>
-
-                            <h3 class="text-2xl font-bold text-white mb-6">
-                                Contact Information
-                            </h3>
-
+                            <h3 class="text-2xl font-bold text-white mb-6">Contact Information</h3>
                             <div class="space-y-6">
-
                                 <div class="flex items-start gap-4">
-
-                                    <div
-                                        class="w-12 h-12 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center">
+                                    <div class="w-12 h-12 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center">
                                         <i class="fa-regular fa-envelope"></i>
                                     </div>
-
                                     <div>
-                                        <p class="text-slate-500 text-sm">
-                                            Email
-                                        </p>
-
-                                        <a href="mailto:dasharath1996@gmail.com"
-                                            class="hover:text-tealAccent transition">
-
+                                        <p class="text-slate-500 text-sm">Email</p>
+                                        <a href="mailto:dasharath1996@gmail.com" class="hover:text-tealAccent transition">
                                             dasharath1996@gmail.com
-
                                         </a>
                                     </div>
-
                                 </div>
 
                                 <div class="flex items-start gap-4">
-
-                                    <div
-                                        class="w-12 h-12 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center">
+                                    <div class="w-12 h-12 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center">
                                         <i class="fa-brands fa-linkedin-in"></i>
                                     </div>
-
                                     <div>
-                                        <p class="text-slate-500 text-sm">
-                                            LinkedIn
-                                        </p>
-
-                                        <a href="https://www.linkedin.com/in/dasharath-kumar-74983a211/"
-                                            target="_blank"
-                                            class="hover:text-tealAccent transition">
-
+                                        <p class="text-slate-500 text-sm">LinkedIn</p>
+                                        <a href="https://www.linkedin.com/in/dasharath-kumar-74983a211/" target="_blank" class="hover:text-tealAccent transition">
                                             linkedin/Dasharath
-
                                         </a>
                                     </div>
-
                                 </div>
-
                             </div>
-
                         </div>
-
                     </div>
 
-                    <!-- Form -->
-                    <div
-                        class="bg-cardBg border border-slate-800 rounded-3xl p-8">
-
+                    <div class="bg-cardBg border border-slate-800 rounded-3xl p-8">
                         <form class="space-y-5">
-
-                            <input type="text"
-                                placeholder="Your Name"
+                            <input type="text" placeholder="Your Name"
                                 class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-4 focus:outline-none focus:border-tealAccent transition">
-
-                            <input type="email"
-                                placeholder="Your Email"
+                            <input type="email" placeholder="Your Email"
                                 class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-4 focus:outline-none focus:border-tealAccent transition">
-
-                            <input type="text"
-                                placeholder="Subject"
+                            <input type="text" placeholder="Subject"
                                 class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-4 focus:outline-none focus:border-tealAccent transition">
-
-                            <textarea rows="5"
-                                placeholder="Your Message"
+                            <textarea rows="5" placeholder="Your Message"
                                 class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-4 focus:outline-none focus:border-tealAccent transition resize-none"></textarea>
-
-                            <button
-                                class="w-full bg-gradient-to-r from-tealAccent to-cyan-500 hover:opacity-90 text-slate-900 font-bold py-4 rounded-xl transition">
-
+                            <button class="w-full bg-gradient-to-r from-tealAccent to-cyan-500 hover:opacity-90 text-slate-900 font-bold py-4 rounded-xl transition">
                                 Send Message
-
                             </button>
-
                         </form>
-
                     </div>
 
                 </div>
 
             </section>
 
-            <!-- FOOTER -->
             <footer class="border-t border-slate-900 py-10 mt-20">
-
-                <div
-                    class="max-w-6xl mx-auto px-6 lg:px-20 flex flex-col lg:flex-row items-center justify-between gap-4">
-
+                <div class="max-w-6xl mx-auto px-6 lg:px-20 flex flex-col lg:flex-row items-center justify-between gap-4">
                     <p class="text-slate-500 text-sm">
                         © <span id="year"></span> Dasharath Kumar. All rights reserved.
                     </p>
-
                     <div class="flex items-center gap-5 text-slate-400">
-
-                        <a href="#home"
-                            class="hover:text-white transition">
-                            Home
-                        </a>
-
-                        <a href="#projects"
-                            class="hover:text-white transition">
-                            Projects
-                        </a>
-
-                        <a href="#contact"
-                            class="hover:text-white transition">
-                            Contact
-                        </a>
-
+                        <a href="#home" class="hover:text-white transition">Home</a>
+                        <a href="#projects" class="hover:text-white transition">Projects</a>
+                        <a href="#contact" class="hover:text-white transition">Contact</a>
                     </div>
-
                 </div>
-
             </footer>
 
         </main>
 
     </div>
 
-    <!-- JS -->
     <script>
-
-        // Mobile Menu
+        // 1. Mobile Left Sidebar Drawer Logic
         const menuBtn = document.getElementById("menuBtn");
         const sidebar = document.getElementById("sidebar");
 
-        menuBtn.addEventListener("click", () => {
+        if (menuBtn && sidebar) {
+            menuBtn.addEventListener("click", (e) => {
+                e.stopPropagation();
+                if (sidebar.style.left === "0px") {
+                    sidebar.style.left = "-100%";
+                } else {
+                    sidebar.style.left = "0px";
+                }
+            });
 
-            if (sidebar.style.left === "0px") {
-                sidebar.style.left = "-100%";
-            } else {
-                sidebar.style.left = "0px";
-            }
+            // Close responsive drawer when a click event maps outside bounds
+            document.addEventListener("click", (e) => {
+                if (window.innerWidth < 1024 && !sidebar.contains(e.target) && e.target !== menuBtn) {
+                    sidebar.style.left = "-100%";
+                }
+            });
 
+            // Automatically slide away when choosing items inside menu links list
+            const localLinks = document.querySelectorAll('.nav-link');
+            localLinks.forEach(item => {
+                item.addEventListener('click', () => {
+                    if (window.innerWidth < 1024) {
+                        sidebar.style.left = "-100%";
+                    }
+                });
+            });
+        }
+
+        // 2. High-Performance Intersection Observer for Viewport Traversal & Link Tracking
+        const structuralSections = document.querySelectorAll("section[id]");
+        const targetNavLinks = document.querySelectorAll(".nav-link");
+        const targetedFadeUps = document.querySelectorAll(".fade-up");
+
+        // Custom margin setup targeting section activation 
+        const frameworkObserverOptions = {
+            root: null,
+            rootMargin: "-25% 0px -50% 0px", 
+            threshold: 0
+        };
+
+        const timelineTrackingObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // Activate structural node view state tracking 
+                    entry.target.classList.add("show");
+
+                    // Set high-contrast link feedback tracking across active layout containers
+                    const targetContainerId = entry.target.getAttribute("id");
+                    targetNavLinks.forEach(anchorNode => {
+                        anchorNode.classList.remove("active-nav");
+                        if (anchorNode.getAttribute("href") === `#${targetContainerId}`) {
+                            anchorNode.classList.add("active-nav");
+                        }
+                    });
+                }
+            });
+        }, frameworkObserverOptions);
+
+        structuralSections.forEach(sectionBlock => {
+            timelineTrackingObserver.observe(sectionBlock);
         });
 
-        // Fade Animation
-        const fadeElements = document.querySelectorAll(".fade-up");
-
-        const observer = new IntersectionObserver((entries) => {
-
+        // Backup safe animation initialization tracking system loop setup
+        const viewportFadeObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
-
                 if (entry.isIntersecting) {
                     entry.target.classList.add("show");
                 }
-
             });
+        }, { rootMargin: "0px 0px -12% 0px" });
 
-        }, {
-            threshold: 0.2
-        });
+        targetedFadeUps.forEach(elementNode => viewportFadeObserver.observe(elementNode));
 
-        fadeElements.forEach(el => observer.observe(el));
-
-        // Active Nav
-        const sections = document.querySelectorAll("section");
-        const navLinks = document.querySelectorAll(".nav-link");
-
-        window.addEventListener("scroll", () => {
-
-            let current = "";
-
-            sections.forEach(section => {
-
-                const sectionTop = section.offsetTop;
-
-                if (pageYOffset >= sectionTop - 200) {
-                    current = section.getAttribute("id");
-                }
-
-            });
-
-            navLinks.forEach(link => {
-
-                link.classList.remove("active-nav");
-
-                if (link.getAttribute("href").includes(current)) {
-                    link.classList.add("active-nav");
-                }
-
-            });
-
-        });
-
-        // Year
-        document.getElementById("year").textContent =
-            new Date().getFullYear();
-
+        // 3. Automatically setup Footer Copyright Timeline Block Content
+        const footerTimestampContainer = document.getElementById("year");
+        if (footerTimestampContainer) {
+            footerTimestampContainer.textContent = new Date().getFullYear();
+        }
     </script>
 
 </body>
