@@ -243,13 +243,10 @@
 
                 </div>
 
-                <a href="resume/Dasharath_Kumar_Resume.pdf"
-                    download
+                <a href="#resume-section" onclick="revealResume()"
                     class="flex items-center justify-center gap-2 bg-gradient-to-r from-tealAccent to-cyan-500 hover:opacity-90 text-slate-900 font-bold py-3 rounded-xl transition">
-
-                    <i class="fa-solid fa-download"></i>
-                    <span>Download Resume</span>
-
+                    <i class="fa-solid fa-file-lines"></i>
+                    <span>View Resume</span>
                 </a>
 
             </div>
@@ -539,7 +536,6 @@
                             <span class="skill">Hive</span>
                             <span class="skill">Hadoop</span>
                             <span class="skill">Apache NiFi</span>
-                            <span class="skill">Apaache Airflow</span>
                             <span class="skill">Grafana</span>
                         </div>
                     </div>
@@ -657,6 +653,31 @@
                 </div>
 
             </section>
+
+            <section id="resume-section" class="hidden max-w-6xl mx-auto px-6 lg:px-20 py-24 border-t border-slate-900 fade-up">
+                
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-white mb-4">Resume</h2>
+                    <div class="w-20 h-1 bg-gradient-to-r from-tealAccent to-cyan-500 mx-auto rounded-full mb-8"></div>
+                    
+                    <a href="resume/Dasharath_Kumar_Resume.pdf" download 
+                       class="inline-flex items-center gap-2.5 bg-gradient-to-r from-tealAccent to-cyan-500 hover:opacity-90 text-slate-900 font-extrabold px-7 py-3.5 rounded-xl transition shadow-[0_0_25px_rgba(0,191,165,0.2)] hover:-translate-y-0.5">
+                        <i class="fa-solid fa-cloud-arrow-down text-lg"></i>
+                        <span>Download PDF Resume</span>
+                    </a>
+                </div>
+
+                <div class="max-w-4xl mx-auto bg-cardBg border border-slate-800 rounded-3xl p-3 md:p-5 shadow-2xl">
+                    <div class="w-full rounded-2xl overflow-hidden bg-slate-950 aspect-[1/1.414] relative min-h-[550px] sm:min-h-[750px] md:min-h-[950px]">
+                        <iframe 
+                            src="resume/Dasharath_Kumar_Resume.pdf#toolbar=0&navpanes=0" 
+                            class="absolute top-0 left-0 w-full h-full border-0 bg-slate-900"
+                            title="Dasharath Kumar Resume">
+                        </iframe>
+                    </div>
+                </div>
+
+            </section>
                       
             <section id="contact"
                 class="max-w-6xl mx-auto px-6 lg:px-20 py-24 border-t border-slate-900 fade-up">
@@ -737,6 +758,17 @@
     </div>
 
     <script>
+        // Toggle visibility handler for runtime toggle manipulation setup
+        function revealResume() {
+            const resumeContainer = document.getElementById("resume-section");
+            if (resumeContainer) {
+                // Instantly remove Tailwind's structural layout block concealment
+                resumeContainer.classList.remove("hidden");
+                // Run immediate tracking calculations updates inside window scope environment layout transitions
+                resumeContainer.classList.add("show");
+            }
+        }
+
         // 1. Mobile Left Sidebar Drawer Logic
         const menuBtn = document.getElementById("menuBtn");
         const sidebar = document.getElementById("sidebar");
@@ -777,7 +809,7 @@
         // Custom margin setup targeting section activation 
         const frameworkObserverOptions = {
             root: null,
-            rootMargin: "-25% 0px -50% 0px", 
+            rootMargin: "-25% 0px -40% 0px", 
             threshold: 0
         };
 
